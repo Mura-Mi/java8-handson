@@ -2,6 +2,7 @@ package com.murami.demo.java8.lambda;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.fail;
 
 import java.util.function.Function;
 
@@ -14,17 +15,17 @@ public class VariousLambdasTest {
 
     @Test
     public void testIntAdder() {
-        // TRY 1 から 10 まで足してみましょう．
+        fail("TRY: 1 から 10 まで足してみましょう．");
     }
 
     @Test
     public void testNumberResolver() {
-        // TRY createNumberResolver の結果を動かしてみましょう．
+        fail("TRY createNumberResolver の結果を動かしてみましょう．");
     }
 
     @Test
     public void testBetterNumberResolver() {
-        // TRY createBetterNumberResolver の結果を動かしてみましょう．
+        fail("TRY createBetterNumberResolver の結果を動かしてみましょう．");
     }
 
     @Test
