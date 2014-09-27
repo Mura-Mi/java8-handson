@@ -5,6 +5,7 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
+import com.murami.demo.java8.lambda.functionalinterface.PlayerNumberResolver;
 import com.murami.demo.java8.model.BaystarsPlayers;
 import com.murami.demo.java8.model.Player;
 

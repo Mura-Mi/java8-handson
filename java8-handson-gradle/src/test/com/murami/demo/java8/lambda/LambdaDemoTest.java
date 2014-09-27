@@ -8,6 +8,7 @@ import java.util.List;
 import org.junit.Test;
 
 import com.google.common.collect.Lists;
+import com.murami.demo.java8.lambda.LambdaDemo;
 
 public class LambdaDemoTest {
 

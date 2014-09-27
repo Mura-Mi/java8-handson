@@ -10,6 +10,7 @@ import java.util.function.ToIntFunction;
 
 import org.junit.Test;
 
+import com.murami.demo.java8.lambda.VariousLambdas;
 import com.murami.demo.java8.model.BaystarsPlayers;
 import com.murami.demo.java8.model.Player;
 

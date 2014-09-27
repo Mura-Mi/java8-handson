@@ -31,9 +31,9 @@ public class VariousLambdasTest {
     public void testPositionStringConverter() {
         Function<Player, String> converter = VariousLambdas.createPositionStringConverter();
 
-        assertThat(converter.apply(BaystarsPlayers.NAKAHATA), is("MANAGER"));
-        assertThat(converter.apply(BaystarsPlayers.BLANCO), is("FIRST_BASEMAN"));
-        assertThat(converter.apply(BaystarsPlayers.TSUTSUGO), is("LEFT_FIELDER"));
+        assertThat("TRY: make this test success.", converter.apply(BaystarsPlayers.NAKAHATA), is("MANAGER"));
+        assertThat("TRY: make this test success.", converter.apply(BaystarsPlayers.BLANCO), is("FIRST_BASEMAN"));
+        assertThat("TRY: make this test success.", converter.apply(BaystarsPlayers.TSUTSUGO), is("LEFT_FIELDER"));
     }
 
 }
