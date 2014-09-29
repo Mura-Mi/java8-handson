@@ -3,25 +3,20 @@ package com.murami.demo.java8.lambda;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import java.util.List;
+import java.util.function.Function;
 
 import org.junit.Test;
 
-import com.google.common.collect.Lists;
-import com.murami.demo.java8.lambda.LambdaDemo;
+import com.murami.demo.java8.model.BaystarsPlayers;
+import com.murami.demo.java8.model.Player;
 
 public class LambdaDemoTest {
 
     @Test
-    public void testReduceNamesToText() {
-        List<String> names = Lists.newLinkedList();
-        names.add("Takuro");
-        names.add("Haru");
-        names.add("Takanori");
-        names.add("Rose");
-        names.add("Komada");
+    public void testPlayerNameUpperCase() {
+        Function<Player, String> nameResolver = LambdaDemo.createPlayerUpperCaseNameResolver();
 
-        assertThat(LambdaDemo.reduceNamesToList(names), is("Takuro, Haru, Takanori, Rose, Komada"));
-
+        assertThat(nameResolver.apply(BaystarsPlayers.KAJITANI), is("KAJITANI"));
+        assertThat(nameResolver.apply(BaystarsPlayers.TSUTSUGO), is("KAJITANI"));
     }
 }
