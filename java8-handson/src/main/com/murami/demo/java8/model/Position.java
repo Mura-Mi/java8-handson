@@ -2,27 +2,38 @@ package com.murami.demo.java8.model;
 
 public enum Position {
 
-    PITCHER,
+    PITCHER(true),
 
-    CATCHER,
+    CATCHER(true),
 
-    FIRST_BASEMAN,
+    FIRST_BASEMAN(true),
 
-    SECOND_BASEMAN,
+    SECOND_BASEMAN(true),
 
-    THIRD_BASEMAN,
+    THIRD_BASEMAN(true),
 
-    SHORT_STOP,
+    SHORT_STOP(true),
 
-    LEFT_FIELDER,
+    LEFT_FIELDER(true),
 
-    CENTER_FIELDER,
+    CENTER_FIELDER(true),
 
-    RIGHT_FIELDER,
+    RIGHT_FIELDER(true),
 
-    DESIGNATED_HITTER,
+    DESIGNATED_HITTER(true),
 
-    COATCH,
+    COATCH(false),
 
-    MANAGER;
+    MANAGER(false);
+
+    private final boolean isPlayable;
+
+    private Position(boolean isPlayable) {
+        this.isPlayable = isPlayable;
+    }
+
+    public boolean isPlayable() {
+        return isPlayable;
+    }
+
 }

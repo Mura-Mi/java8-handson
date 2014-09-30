@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
 import com.murami.demo.java8.lambda.functionalinterface.PlayerNumberResolver;
-import com.murami.demo.java8.model.BaystarsPlayers;
+import com.murami.demo.java8.model.BaystarsMembers;
 import com.murami.demo.java8.model.Player;
 
 public class PlayerNumberResolverTest {
@@ -23,9 +23,9 @@ public class PlayerNumberResolverTest {
             }
         };
 
-        assertThat(resolver.resolve(BaystarsPlayers.KAJITANI), is(3));
-        assertThat(resolver.resolve(BaystarsPlayers.YAMAZAKI), is(0));
-        assertThat(resolver.resolve(BaystarsPlayers.GOURRIELL), is(10));
+        assertThat(resolver.resolve(BaystarsMembers.KAJITANI), is(3));
+        assertThat(resolver.resolve(BaystarsMembers.YAMAZAKI), is(0));
+        assertThat(resolver.resolve(BaystarsMembers.GOURRIELL), is(10));
     }
 
 }

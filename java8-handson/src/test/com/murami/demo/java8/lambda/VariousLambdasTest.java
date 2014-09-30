@@ -8,7 +8,7 @@ import java.util.function.Function;
 
 import org.junit.Test;
 
-import com.murami.demo.java8.model.BaystarsPlayers;
+import com.murami.demo.java8.model.BaystarsMembers;
 import com.murami.demo.java8.model.Player;
 
 public class VariousLambdasTest {
@@ -32,9 +32,9 @@ public class VariousLambdasTest {
     public void testPositionStringConverter() {
         Function<Player, String> converter = VariousLambdas.createPositionStringConverter();
 
-        assertThat("TRY: make this test success.", converter.apply(BaystarsPlayers.NAKAHATA), is("MANAGER"));
-        assertThat("TRY: make this test success.", converter.apply(BaystarsPlayers.BLANCO), is("FIRST_BASEMAN"));
-        assertThat("TRY: make this test success.", converter.apply(BaystarsPlayers.TSUTSUGO), is("LEFT_FIELDER"));
+        assertThat("TRY: make this test success.", converter.apply(BaystarsMembers.NAKAHATA), is("MANAGER"));
+        assertThat("TRY: make this test success.", converter.apply(BaystarsMembers.BLANCO), is("FIRST_BASEMAN"));
+        assertThat("TRY: make this test success.", converter.apply(BaystarsMembers.TSUTSUGO), is("LEFT_FIELDER"));
     }
 
 }

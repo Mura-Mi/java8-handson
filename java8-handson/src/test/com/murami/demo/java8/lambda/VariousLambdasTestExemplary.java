@@ -11,7 +11,7 @@ import java.util.function.ToIntFunction;
 import org.junit.Test;
 
 import com.murami.demo.java8.lambda.VariousLambdas;
-import com.murami.demo.java8.model.BaystarsPlayers;
+import com.murami.demo.java8.model.BaystarsMembers;
 import com.murami.demo.java8.model.Player;
 
 public class VariousLambdasTestExemplary {
@@ -36,17 +36,17 @@ public class VariousLambdasTestExemplary {
     public void testNumberResolver() {
         Function<Player, Integer> resolver = VariousLambdas.createNumberResolver();
 
-        assertThat(resolver.apply(BaystarsPlayers.KAJITANI), is(3));
-        assertThat(resolver.apply(BaystarsPlayers.KUBO), is(27));
-        assertThat(resolver.apply(BaystarsPlayers.BLANCO), is(42));
+        assertThat(resolver.apply(BaystarsMembers.KAJITANI), is(3));
+        assertThat(resolver.apply(BaystarsMembers.KUBO), is(27));
+        assertThat(resolver.apply(BaystarsMembers.BLANCO), is(42));
     }
 
     @Test
     public void testBetterNumberResolver() {
         ToIntFunction<Player> resolver = VariousLambdas.createBetterNumberResolver();
 
-        assertThat(resolver.applyAsInt(BaystarsPlayers.KAJITANI), is(3));
-        assertThat(resolver.applyAsInt(BaystarsPlayers.KUBO), is(27));
-        assertThat(resolver.applyAsInt(BaystarsPlayers.BLANCO), is(42));
+        assertThat(resolver.applyAsInt(BaystarsMembers.KAJITANI), is(3));
+        assertThat(resolver.applyAsInt(BaystarsMembers.KUBO), is(27));
+        assertThat(resolver.applyAsInt(BaystarsMembers.BLANCO), is(42));
     }
 }

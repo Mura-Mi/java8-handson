@@ -18,4 +18,7 @@ public class Player {
     @Setter
     private Position position;
 
+    public boolean isPlayable() {
+        return position.isPlayable();
+    }
 }

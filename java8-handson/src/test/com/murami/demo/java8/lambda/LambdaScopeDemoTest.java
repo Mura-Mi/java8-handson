@@ -6,7 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.Test;
 
 import com.google.common.base.Supplier;
-import com.murami.demo.java8.model.BaystarsPlayers;
+import com.murami.demo.java8.model.BaystarsMembers;
 import com.murami.demo.java8.model.Player;
 
 public class LambdaScopeDemoTest {
@@ -18,7 +18,7 @@ public class LambdaScopeDemoTest {
     @Test
     public void demo() {
 
-        /* final */Player p = BaystarsPlayers.KAJITANI;
+        /* final */Player p = BaystarsMembers.KAJITANI;
 
         Supplier<String> nameSupplier = () -> p.getLastName();
         assertThat(nameSupplier.get(), is("Kajitani"));
