@@ -17,6 +17,6 @@ public class LambdaDemoTest {
         Function<Player, String> nameResolver = LambdaDemo.createPlayerUpperCaseNameResolver();
 
         assertThat(nameResolver.apply(BaystarsMembers.KAJITANI), is("KAJITANI"));
-        assertThat(nameResolver.apply(BaystarsMembers.TSUTSUGO), is("KAJITANI"));
+        assertThat(nameResolver.apply(BaystarsMembers.TSUTSUGO), is("TSUTSUGO"));
     }
 }
