@@ -6,8 +6,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.Test;
 
 import com.google.common.base.Supplier;
-import com.murami.demo.java8.model.BaystarsMembers;
-import com.murami.demo.java8.model.Player;
+import com.murami.model.BaystarsMembers;
+import com.murami.model.Player;
 
 public class LambdaScopeDemoTest {
 

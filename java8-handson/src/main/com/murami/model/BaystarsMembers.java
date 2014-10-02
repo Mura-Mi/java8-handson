@@ -1,4 +1,4 @@
-package com.murami.demo.java8.model;
+package com.murami.model;
 
 import java.util.Collection;
 import java.util.Collections;

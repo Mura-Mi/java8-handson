@@ -1,6 +1,6 @@
 package com.murami.demo.java8.lambda.functionalinterface;
 
-import com.murami.demo.java8.model.Player;
+import com.murami.model.Player;
 
 @FunctionalInterface
 public interface PlayerNumberResolver {

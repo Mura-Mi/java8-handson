@@ -2,8 +2,8 @@ package com.murami.demo.java8.stream;
 
 import java.util.stream.Stream;
 
-import com.murami.demo.java8.model.BaystarsMembers;
-import com.murami.demo.java8.model.Player;
+import com.murami.model.BaystarsMembers;
+import com.murami.model.Player;
 
 public class StreamFeatureDemo {
 

@@ -11,8 +11,8 @@ import java.util.function.ToIntFunction;
 import org.junit.Test;
 
 import com.murami.demo.java8.lambda.VariousLambdas;
-import com.murami.demo.java8.model.BaystarsMembers;
-import com.murami.demo.java8.model.Player;
+import com.murami.model.BaystarsMembers;
+import com.murami.model.Player;
 
 public class VariousLambdasTestExemplary {
 
