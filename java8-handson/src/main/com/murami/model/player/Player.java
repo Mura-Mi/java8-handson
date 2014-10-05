@@ -1,4 +1,4 @@
-package com.murami.model;
+package com.murami.model.player;
 
 import lombok.Data;
 import lombok.Setter;

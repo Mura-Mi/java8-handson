@@ -16,9 +16,9 @@ import org.junit.rules.Timeout;
 
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
-import com.murami.model.BaystarsMembers;
-import com.murami.model.Player;
-import com.murami.model.Position;
+import com.murami.model.player.BaystarsMembers;
+import com.murami.model.player.Player;
+import com.murami.model.player.Position;
 
 public class StreamFeatureDemoTest {
 

@@ -6,8 +6,8 @@ import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
 import com.murami.demo.java8.lambda.functionalinterface.PlayerNumberResolver;
-import com.murami.model.BaystarsMembers;
-import com.murami.model.Player;
+import com.murami.model.player.BaystarsMembers;
+import com.murami.model.player.Player;
 
 public class PlayerNumberResolverTest {
 

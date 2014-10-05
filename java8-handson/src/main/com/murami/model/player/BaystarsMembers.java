@@ -1,4 +1,4 @@
-package com.murami.model;
+package com.murami.model.player;
 
 import java.util.Collection;
 import java.util.Collections;

@@ -7,7 +7,7 @@ import java.util.function.IntConsumer;
 import java.util.function.ToIntFunction;
 
 import com.google.common.base.Functions;
-import com.murami.model.Player;
+import com.murami.model.player.Player;
 
 public class VariousLambdas {
 

@@ -7,8 +7,8 @@ import java.util.function.Function;
 
 import org.junit.Test;
 
-import com.murami.model.BaystarsMembers;
-import com.murami.model.Player;
+import com.murami.model.player.BaystarsMembers;
+import com.murami.model.player.Player;
 
 public class LambdaDemoTest {
 

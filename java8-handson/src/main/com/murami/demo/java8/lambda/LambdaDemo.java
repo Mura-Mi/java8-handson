@@ -2,7 +2,7 @@ package com.murami.demo.java8.lambda;
 
 import java.util.function.Function;
 
-import com.murami.model.Player;
+import com.murami.model.player.Player;
 
 public class LambdaDemo {
 
